@@ -8,7 +8,7 @@ async function consultarPoke(id: number): Promise<Pokemon | null> {
     try {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
 
-        //Siempre ha yque poner la comprabación
+        //Siempre hay que poner la comprabación
         if (!res.ok) {
             console.log("Error");
             return null;
